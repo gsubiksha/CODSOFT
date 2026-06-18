@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quiz Maker</title>
-    <link rel="stylesheet" href="style.css">
+<title>Online Quiz Maker</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Online Quiz Maker</h1>
+<div class="container">
+<h1>Online Quiz Maker</h1>
 
-        <p>What does HTML stand for?</p>
+<h2 id="question"></h2>
 
-        <button onclick="checkAnswer('a')">Hyper Text Markup Language</button>
-        <button onclick="checkAnswer('b')">High Text Machine Language</button>
-        <button onclick="checkAnswer('c')">Hyper Transfer Markup Language</button>
+<button onclick="checkAnswer(0)" id="btn0"></button>
+<button onclick="checkAnswer(1)" id="btn1"></button>
+<button onclick="checkAnswer(2)" id="btn2"></button>
 
-        <h2 id="result"></h2>
-    </div>
+<h3 id="score"></h3>
 
-    <script src="script.js"></script>
+<button onclick="nextQuestion()">Next</button>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
